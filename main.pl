@@ -11,7 +11,6 @@ use LWP::UserAgent;
 use LWP::Simple;
 use HTTP::Request::Common;
 use JSON qw( decode_json );
-use DateTime::Format::Strptime;
 #optional
 use Data::Dumper;
 
@@ -55,7 +54,7 @@ if (@$names_ref) { # @a is not empty...
 }
 
 #looping through the array
-print "\nboucle: \n";
+print "\nloop: \n";
 for(@$names_ref) { 
    print "$_->{status}\n";
    print "$_->{shipping}->{city}\n";
@@ -69,5 +68,4 @@ for(@$names_ref) {
           print "$_->{key} : $_->{value}\n";
       }
    }  
-
 }
