@@ -44,7 +44,7 @@ print "Dumper:\n".Dumper( $names_ref );
 
 #Getting items within the array reference
 #known increment
-print "\nfixe: \n" ;
+print "\nstatic: \n" ;
 if (@$names_ref) { # @a is not empty...
    print "@{ $names_ref }[0]->{status}\n";   
    print "@{ $names_ref }[0]->{shipping}->{city}\n";   
